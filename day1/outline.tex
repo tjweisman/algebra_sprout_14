@@ -1,0 +1,154 @@
+\documentclass{article}
+
+\input{../common.tex}
+
+\title{Sprout 2014:\\
+Abstract Algebra, Day 1}
+\author{Lou Gaudet and Teddy Weisman}
+\date{July 12, 2014}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+
+\begin{itemize}
+
+\item Start with a 5-10 minute discussion of what the class already
+  knows. Ask students what they think the following words mean:
+
+  \begin{itemize}
+  \item Algebra
+  \item Symmetry
+  \item Geometry
+  \item Transformation
+  \item Inverse
+  \item Structure
+  \item Geometry
+  \item Equivalence
+  \end{itemize}
+
+\item Discuss the style of the math we're doing in this course: we'll
+  be learning mostly by asking questions and exploring concepts, but
+  as much as possible, we'll try and be explicit and precise about
+  seemingly familiar topics.
+
+\item Highlight the contrast between high school algebra they may
+  already be familiar with, and \emph{abstract algebra}.
+
+\end{itemize}
+
+\section*{What is a group?}
+
+\begin{itemize}
+\item Informally define the concept of a \emph{set}, and encourage
+  students to come up with some silly-sounding examples (we can put
+  whatever we want between curly braces!)
+
+\item Say what it means for a set to lack \emph{structure} by
+  contrasting a set with $\Z$, which has \emph{addition}, a
+  \emph{binary operation}. (Define the word \emph{integer} here). 
+
+\item Ask students to list properties of addition. Recognize
+  (underline, star, etc.) properties which correspond to \emph{group
+    axioms}. Put other properties off to the side.
+
+\item Give the formal definition of a group
+
+\end{itemize}
+
+\section*{Examples and non-examples of groups}
+\begin{itemize}
+\item $\Z$. (It better satisfy the properties that we picked out from
+  it!)
+
+\item The number line ($\R$). Mention $\Q$ and $\C$ for those who have
+  heard of them. 
+
+\item All of these groups are infinite, so try and build a
+  finite group:
+
+  \begin{itemize}
+
+  \item Nonexample: $A = \{x \in \Z : 0 \le x < 10\}$ (\emph{write:
+      ``positive integers less than 10''}).
+
+  \item Introduce ``addition modulo 10'' as a new example of a binary
+    operation on the integers. $A$ is now a group under this
+    operation!
+
+  \item Show that we can also do this for $\Z/3\Z$ (multiplication
+    table). Mention that we can do this for any $n$.
+    
+  \end{itemize}
+
+\item Groups don't need to be ``numbers'': rotations in $\R^2$
+
+\item Need for an identity element: $\N$
+
+\end{itemize}
+
+\subsection*{Activity: which of the following are groups?}
+
+\begin{itemize}
+\item $2\Z$ (yes)
+\item $\N \cup \{0\}$ (no)
+\item $(\R \setminus \{0\},  \times)$ (yes)
+\item Free group on two letters (yes)
+\item $(\R, -)$ (no)
+\item Rotations of a triangle (yes).
+\item Coordinate pairs $(x,y)$ with either $x=0$ or $y=0$ (no, draw a
+  picture)
+\end{itemize}
+
+\subsection*{Commutativity}
+\begin{itemize}
+\item Define commutativity (if it hasn't been already). Challenge
+  students to identify which group from the previous activity is
+  \emph{not} commutative (free group).
+
+\item $D_3$ (symmetries of a triangle). Multiplication table. Mention
+  generality of $D_n$. 
+
+\item Fun example: Rubik's cube
+\end{itemize}
+
+\section*{Isomorphism}
+
+\begin{itemize}
+
+\item Use the multiplication table for $D_3$ to get the multiplcation
+  table for ``rotations of a triangle.'' Compare to the multiplication
+  table for $\Z/3\Z$ ($r_i \mapsto i$). 
+
+\item Informally define the concept of \emph{isomorphic groups}. Give
+  a more formal definition if it seems appropriate.
+
+\item Discuss ``size''(order) of a group
+
+\item Point out how isomorphisms give us a way to count the number of
+  groups there are of a particular order ``up to isomorphism.''
+  Counting groups isn't like counting sets, it's like counting
+  multiplication tables.
+
+\item If there's time, give an explicit example of two non-isomorphic
+  groups of the same order (probably $V_4$ and $\Z/4\Z$)
+ 
+\end{itemize}
+
+\section*{Things to think about for next week}
+
+\begin{itemize}
+
+\item Can you come up with any more examples of groups of order $3$?
+  Are they isomorphic to the first two groups we came up with?
+
+\item How could we count the number of groups of a particular order
+  (up to isomorphism)?
+
+\item What are some ways to tell if two groups are isomorphic?
+
+\end{itemize}
+
+\end{document}
