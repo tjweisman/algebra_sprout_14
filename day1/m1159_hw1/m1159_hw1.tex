@@ -1,20 +1,107 @@
 \documentclass[10pt, letterpaper]{article}
-
 \input{../../common}
 
 \begin{document}
 
 \title{Math 1159 -- Abstract Algebra: Homework 1}
-\author{Lou Gaudet \& Teddy Weisman \\ \url{louis.gaudet@yale.edu} \& \url{theodore.weisman@yale.edu}}
-\date{\today}
+\author{Lou Gaudet \& Teddy Weisman \\ 
+\url{louis.gaudet@yale.edu} \& \url{theodore.weisman@yale.edu}}
+\date{July 12, 2014}
 \maketitle
 
+All homeworks for this class are optional (but recommended). Feel free
+to email us if you have questions!
+
+\subsection*{Group Axioms}
+If $G$ is a group with operation $\star$, then:
+\begin{enumerate}
+\item \emph{(Associativity)}: For any $a$, $b$, and $c$ in $G$, then
+  $a \star (b \star c) = (a \star b) \star c$.
+
+\item \emph{(Identity)}: There is an element $e$ in $G$ (the
+  \emph{identity element}) such that for any $a$ in $G$, $e \star a =
+  a$ and $a \star e = a$. 
+
+\item \emph{(Invertibility)}: For any element $a$ in $G$, there is an
+  element $a^{-1}$ (the \emph{inverse} of $a$) such that $a \star
+  a^{-1} = e$ and $a^{-1} \star a = e$.
+
+\item \emph{(Closure)}: For any elements $a$ and $b$ in $G$, $a \star
+  b$ is also in $G$.
+
+\end{enumerate}
+
+If, for every $a$ and $b$ in $G$, $a \star b = b \star a$, then we say
+the group is \emph{commutative}, or \emph{abelian}. \textbf{This
+  property is not required for $G$ to be a group!}
+
+\subsection*{Exercises}
+
 \begin{enumerate}
 
-\item Which of the following are groups? For each one that isn't, identify which of the four properties it lacks. (Can you give the set a different operation that would turn it into a group?)
+\item Which of the following are groups? For each one that isn't,
+  identify which of the four properties it lacks.
+
 \begin{enumerate}
-\item
+
+\item Rotations of a circle, with the composition operation. (Include
+  the identity rotation; that is, the ``rotation'' consisting of
+  leaving the circle unchanged).
+
+\item Reflections of a triangle, with the composition
+  operation. (Include the identity reflection). 
+
+\item The set of all odd integers, with addition as the operation.
+
+\item $\{0\}$ (the set containing only $0$), with addition.
+
+\item $\{1\}$, with addition
+
+\item $\{1\}$, with multiplication
+
+\item The set of rational numbers with the operation $\star$, where
+  $a \star b = \frac{a + b}{5}$
 \end{enumerate}
+
+\item $D_4$, the set of symmetries of a square, is a group under
+  composition.
+  \begin{enumerate}
+    \item Is this group abelian?
+
+    \item Write out the group table for this group. (This is a little
+      tedious, but it will help you get a feel for how this group
+      works).
+  \end{enumerate}
+
+\item Are the groups defined by the following two tables isomorphic?
+  Why or why not?
+
+\begin{figure}[h]
+\centering
+\begin{tabular} { c|cccc }
+   & 1 & a & b & c \\ \hline
+ 1 & 1 & a & b & c \\
+ a & a & b & c & 1 \\
+ b & b & c & 1 & a \\
+ c & c & 1 & a & b
+\end{tabular}
+\qquad
+\begin{tabular}{c|cccc}
+  & 1 & a & b & c \\ \hline
+1 & 1 & a & b & c \\
+a & a & 1 & c & b \\
+b & b & c & 1 & a \\
+c & c & b & a & 1
+\end{tabular}
+\end{figure}
+
+\item Can you find any more examples of groups of order $3$? For each
+  example you find, write down a group table and check if it is
+  isomorphic to one of the groups of order $3$ we found in class.
+
+  \textbf{Challenge}: Can you write down a list of groups (with their
+  group tables) so that \emph{any} group of order $3$ is isomorphic to
+  something in your list? (There might not be as many as you think!)
 
 \end{enumerate}
 
