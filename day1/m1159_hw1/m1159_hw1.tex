@@ -1,6 +1,8 @@
 \documentclass[10pt, letterpaper]{article}
 \input{../../common}
 
+\pagenumbering{gobble}
+
 \begin{document}
 
 \title{Math 1159 -- Abstract Algebra: Homework 1}
@@ -15,6 +17,9 @@ to email us if you have questions!
 \subsection*{Group Axioms}
 If $G$ is a group with operation $\star$, then:
 \begin{enumerate}
+\item \emph{(Closure)}: For any elements $a$ and $b$ in $G$, $a \star
+  b$ is also in $G$.
+
 \item \emph{(Associativity)}: For any $a$, $b$, and $c$ in $G$, then
   $a \star (b \star c) = (a \star b) \star c$.
 
@@ -26,14 +31,11 @@ If $G$ is a group with operation $\star$, then:
   element $a^{-1}$ (the \emph{inverse} of $a$) such that $a \star
   a^{-1} = e$ and $a^{-1} \star a = e$.
 
-\item \emph{(Closure)}: For any elements $a$ and $b$ in $G$, $a \star
-  b$ is also in $G$.
-
 \end{enumerate}
 
 If, for every $a$ and $b$ in $G$, $a \star b = b \star a$, then we say
-the group is \emph{commutative}, or \emph{abelian}. \textbf{This
-  property is not required for $G$ to be a group!}
+the group is \emph{commutative}, or \emph{abelian}. \textbf{However:
+  this property is not required for $G$ to be a group!}
 
 \subsection*{Exercises}
 
@@ -63,8 +65,8 @@ the group is \emph{commutative}, or \emph{abelian}. \textbf{This
   $a \star b = \frac{a + b}{5}$
 \end{enumerate}
 
-\item $D_4$, the set of symmetries of a square, is a group under
-  composition.
+\item The set of symmetries of a square (called $D_4$) is a group
+  under composition.
   \begin{enumerate}
     \item Is this group abelian?
 
@@ -79,7 +81,7 @@ the group is \emph{commutative}, or \emph{abelian}. \textbf{This
 \begin{figure}[h]
 \centering
 \begin{tabular} { c|cccc }
-   & 1 & a & b & c \\ \hline
+ $\star$ & 1 & a & b & c \\ \hline
  1 & 1 & a & b & c \\
  a & a & b & c & 1 \\
  b & b & c & 1 & a \\
@@ -87,7 +89,7 @@ the group is \emph{commutative}, or \emph{abelian}. \textbf{This
 \end{tabular}
 \qquad
 \begin{tabular}{c|cccc}
-  & 1 & a & b & c \\ \hline
+ $\diamond$ & 1 & a & b & c \\ \hline
 1 & 1 & a & b & c \\
 a & a & 1 & c & b \\
 b & b & c & 1 & a \\
@@ -101,7 +103,8 @@ c & c & b & a & 1
 
   \textbf{Challenge}: Can you write down a list of groups (with their
   group tables) so that \emph{any} group of order $3$ is isomorphic to
-  something in your list? (There might not be as many as you think!)
+  something in your list? (\textbf{Hint:} there might not be as many as
+  you think!)
 
 \end{enumerate}
 
